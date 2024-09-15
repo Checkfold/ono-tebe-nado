@@ -1,6 +1,7 @@
 .header {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr 148px 1fr;
     align-items: center;
     padding-top: 92px;
     padding-left: 24px;
@@ -10,14 +11,14 @@
 
 .header__links-list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 10px 33px;
+    gap: 33px;
     margin-left: 26px;
+    flex-direction: row;
   }
 
 .header__links-list-item {
     min-width: fit-content;
+    list-style: circle;
 }
 
 .header__link {
