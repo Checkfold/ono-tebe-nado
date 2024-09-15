@@ -13,14 +13,11 @@
     flex-direction: row;
     justify-content: space-around;
     gap: 10px 33px;
+    margin-left: 26px;
   }
 
 .header__links-list-item {
     min-width: fit-content;
-}
-
-.menu_list {
-  margin-left: 26px;
 }
 
 .header__link {
@@ -37,9 +34,6 @@
 
 .header__addres {
     display: flex;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.3px;
     margin-right: 61px;
     justify-content: end;
     text-underline-offset: 4px;
@@ -47,6 +41,10 @@
 
 address {
     font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    text-underline-offset: 4px;
 }
 
 .header__logo-image {
@@ -100,10 +98,6 @@ address {
     text-align: end;
     word-spacing: -21px;
     text-align: end;
-  }
-
-  .letter-spacing-extended {
-    letter-spacing: 5px;
   }
   
   .cover__description {
@@ -271,7 +265,7 @@ address {
   
   }
 
-  .about__logo-immage img{
+  .about__logo-immage img {
     width: 148px;
     height: 114px;
   }
@@ -291,7 +285,7 @@ address {
     line-height: 46.96px;
   }
 
-  .about__text  {
+  .about__text {
     display: flex;
     flex-direction: column;
     grid-area: 2 / 2 / 3 / 3;
@@ -319,10 +313,6 @@ address {
   }
 
   .footer__adress {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.3px;
-    text-underline-offset: 4px;
     width: 100%;
   }
 
