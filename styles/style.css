@@ -97,7 +97,6 @@ address {
     margin-right: -31px;
     text-align: end;
     word-spacing: -21px;
-    text-align: end;
   }
   
   .cover__description {
@@ -306,7 +305,6 @@ address {
   .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
     padding-left: 50px;
     padding-right: 50px;
     align-items: start;
