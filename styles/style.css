@@ -52,7 +52,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 757px;
+    min-height: 757px;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/cover.jpg");
     background-size:cover;
     background-position: center;
@@ -212,7 +212,7 @@
     justify-content: space-between;
     padding: 51px 40px 48px 40px;
     width: 334px;
-    height: 563px;
+    min-height: 563px;
   }
 
   .card__text {
@@ -247,17 +247,14 @@
 
   .about {
     display: grid;
-    grid-template-columns: 359px 1fr;
-    grid-template-rows:277px 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows:auto auto;
     margin: 155px 24px 180px 24px;
   }
 
   .about__logo {
-    width: 287px;
-    height: 270px;
     grid-area: 1 / 1 / 2 / 2;
-    padding-left: 47px;
-    padding-top: 30px;
+    margin: 27px 72px 7px 47px;
   }
 
   .about__logo-immage {
@@ -299,14 +296,7 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-  }
-
-  .about__text p:nth-child(1) {
     letter-spacing: 0.01em;
-  }
-
-  .about__text span:nth-child(2) {
-    letter-spacing: 0.04em;
   }
 
   .footer {
@@ -315,6 +305,7 @@
     padding-left: 50px;
     padding-right: 50px;
     align-items: start;
+    margin-bottom: 88px;
   }
 
   .footer__address {
@@ -329,6 +320,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 21.13px;
+    text-underline-offset: 4px;
   }
 
   .footer__social-list {
@@ -339,7 +331,6 @@
     width: 100%;
     gap: 48px;
     justify-content: flex-end;
-    height: 48px;
     list-style: none;
   }
 
