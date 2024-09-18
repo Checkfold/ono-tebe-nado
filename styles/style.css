@@ -1,6 +1,5 @@
 .header {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: 1fr 148px 1fr;
     align-items: center;
     padding-top: 92px;
@@ -33,14 +32,11 @@
     list-style: none;
   }
 
-.header__addres {
-    display: flex;
-    margin-right: 61px;
-    justify-content: end;
-    text-underline-offset: 4px;
+.header__address {
+    margin-left: 188px;
 }
 
-address {
+.address {
     font-style: normal;
     font-size: 18px;
     font-weight: 400;
@@ -131,7 +127,7 @@ address {
     cursor: pointer;
   }
 
-/* ниже анимация кнопки,
+/* анимация кнопки,
 
    .bet-button:hover {
     transition: 1.2s ease-in-out;
@@ -164,40 +160,50 @@ address {
 
   .lots__card-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 25px;
+    text-decoration: none;
+  }
+
+  .lots__card-list a {
+    text-decoration-color: white;
+    text-decoration: none;
+  }
+
+  .lots__card-list h3 {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
   }
 
   .lots__card-list li {
     list-style: none;
   }
-  
+
   .card_type_film {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/card-lot-01.jpg");
-    background-position: center;
-    background-size: cover;
   }
 
   .card_type_book {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/card-lot-02.jpg");
-    background-position: center;
-    background-size: cover;
   }
 
   .card_type_picture {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/card-lot-03.jpg");
+  }
+
+  .card_type {
     background-position: center;
     background-size: cover;
   }
 
-  .card-link {
+  .card-title {
     color: white;
     font-size: 22px;
     font-weight: 700;
     line-height: 26.4px;
     text-transform: uppercase;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1px;
   }
 
   article {
@@ -279,7 +285,7 @@ address {
     grid-area: 1 / 2 / 2 / 3;
   }
 
-  .about__title h3 {
+  .about__title h2 {
     font-size: 40px;
     font-weight: 700;
     line-height: 46.96px;
@@ -311,7 +317,7 @@ address {
     align-items: start;
   }
 
-  .footer__adress {
+  .footer__address {
     width: 100%;
   }
 

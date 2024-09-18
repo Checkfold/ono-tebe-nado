@@ -11,7 +11,6 @@
   </head>
   <body class="body">
     <header class="header">
-      <div>
         <nav class="header__menu">
           <ul class="header__links-list">
             <li class="header__links-list-item header__links-list-item_no-bullit">
@@ -25,18 +24,14 @@
             </li>
           </ul>
         </nav>
-      </div>
-      <div class="header__logo">
-        <a>
+        <a class="header__logo">
           <img
             src="./images/logo-black.svg"
             alt="Логотип Оно тебе надо"
             class="header__logo-image"
           />
         </a>
-      </div>
-      <div class="header__addres">
-        <address>
+        <address class="header__address address">
           <a href="tel:+99995555555">+9 999 555 5555</a>
           <br />
           <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
@@ -48,11 +43,17 @@
     </header>
     <main>
       <section class="cover">
-        <div class="text_block">
-          <h1 class="aligned-text_start">он о</h1>
-          <h1 class="aligned-text_middle">теб е</h1>
-          <h1 class="aligned-text_end">н адо</h1>
-        </div>
+        <h1 class="text_block">
+          <span class="aligned-text_start">
+            он <span>о</span>
+          </span>
+          <span class="aligned-text_middle">
+            теб <span>е</span>
+          </span>
+          <span class="aligned-text_end">
+            <span>н</span> адо
+          </span>
+        </h1>
         <div class="cover__description">
           <p class="cover__description-text">
             Аукцион вещей, в которые никто не верил
@@ -63,11 +64,50 @@
       <section class="loots">
         <h2 class="lots__heading">лоты</h2>
         <ul class="lots__card-list">
+          <li class="card_type_film card_type">
+            <a href="#">
+              <article>
+                <h3 class="card-title">Фильм режиссёра, который бросил киношколу</h3>
+                <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?</p>
+              </article>
+            </a>
+          </li>
+          <li class="card_type_book card_type">
+            <a href="#">
+              <article>
+                <h3 class="card-title">Книга, где описан один скучный день из жизни рекламного
+                  агента</h3>
+                <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?</p>
+              </article>
+            </a>
+          </li>
+          <li class="card_type_picture card_type">
+            <a href="#">
+              <article>
+                <h3 class="card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?</p>
+              </article>
+            </a>
+          </li>
+        </ul>  
+        <!-- <ul class="lots__card-list">
           <li class="card_type_film">
             <article>
-              <a class="card-link" href="#"
+              <h3>
+                <a class="card-link" href="#"
                 >Фильм режиссёра, который бросил киношколу</a
               >
+              </h3>
               <div class="card__text_block">
                 <p class="card__text">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
@@ -79,10 +119,12 @@
           </li>
           <li class="card_type_book">
             <article>
-              <a class="card-link" href="#"
+              <h3>
+                <a class="card-link" href="#"
                 >Книга, где описан один скучный день из жизни рекламного
                 агента</a
               >
+              </h3>
               <div class="card__text_block">
                 <p class="card__text">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
@@ -97,9 +139,11 @@
           </li>
           <li class="card_type_picture">
             <article>
-              <a class="card-link" href="#"
+              <h3>
+                <a class="card-link" href="#"
                 >Картина, которую повторит даже 5-летний сын маминой подруги</a
               >
+              </h3>
               <div class="card__text_block">
                 <p class="card__text">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
@@ -110,7 +154,7 @@
               </div>
             </article>
           </li>
-        </ul>
+        </ul> -->
         <a class="lots__look-more-link" href="#">посмотреть больше</a>
       </section>
       <section class="about">
@@ -120,7 +164,7 @@
           </div>
         </div>
         <div class="about__title">
-          <h3>Об аукционе</h3>
+          <h2>Об аукционе</h2>
         </div>
         <div class="about__text">
           <p>
@@ -146,7 +190,7 @@
       </section>
     </main>
     <footer class="footer">
-      <address class="footer__adress">
+      <address class="footer__address address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <br />
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
