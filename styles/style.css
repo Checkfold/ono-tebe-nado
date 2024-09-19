@@ -20,6 +20,10 @@
     list-style: circle;
 }
 
+.link-active {
+  text-decoration: none;
+}
+
 .header__link {
     font-size: 18px;
     font-weight: 400;
@@ -68,6 +72,7 @@
     font-size: 100px;
     line-height: 115px;
     gap: 12px;
+    padding-bottom: 130px;
   }
 
   h1 {
@@ -127,7 +132,7 @@
     cursor: pointer;
   }
 
-/* анимация кнопки,
+ /* анимация кнопки,
 
    .bet-button:hover {
     transition: 1.2s ease-in-out;
@@ -141,7 +146,7 @@
     background: rgb(60, 60, 167);
   } 
 
-   конец анимации кнопки */
+   конец анимации кнопки  */
 
   .loots {
     margin-top: 179px;
@@ -206,7 +211,7 @@
     text-transform: uppercase;
   }
 
-  article {
+  .lots__card-list article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -222,7 +227,7 @@
     color: white;
   }
 
-  /* анимация карточек при наведении
+/* 
 
    .lots__card-list li:hover {
     transition: 1.2s ease-in-out;
@@ -231,8 +236,8 @@
     animation:elmtoBack 1.2s linear normal forwards;
     cursor: pointer;
   } 
+ */
 
-   конец анимации карточек */
 
   .lots__look-more-link {
     display: block;
